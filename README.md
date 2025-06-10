@@ -38,8 +38,8 @@ led_driver_project/
 
 ### 🔧 1. Compilar el módulo
 
-```bash
 cd driver
+
 make
 
 ### 2. Cargar el módulo
