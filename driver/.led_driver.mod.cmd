@@ -1,0 +1,1 @@
+savedcmd_/home/ubuntu/led_driver_project/driver/led_driver.mod := printf '%s\n'   led_driver.o | awk '!x[$$0]++ { print("/home/ubuntu/led_driver_project/driver/"$$0) }' > /home/ubuntu/led_driver_project/driver/led_driver.mod

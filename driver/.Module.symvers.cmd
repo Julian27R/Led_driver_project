@@ -1,0 +1,1 @@
+savedcmd_/home/ubuntu/led_driver_project/driver/Module.symvers :=  scripts/mod/modpost -M -m -a      -o /home/ubuntu/led_driver_project/driver/Module.symvers -T /home/ubuntu/led_driver_project/driver/modules.order -i Module.symvers -e 
