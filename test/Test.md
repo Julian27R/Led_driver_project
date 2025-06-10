@@ -14,9 +14,6 @@ Verificar que:
 4. La aplicación de usuario en Python puede:
    - Encender y apagar el LED
    - Leer el estado actual del LED
-5. El sistema registra correctamente los eventos en `dmesg`
-6. El módulo se carga automáticamente al arrancar la Lichee
-
 ---
 
 ##  Pasos de prueba
@@ -59,7 +56,7 @@ sudo mknod /dev/leddev c 239 0
 sudo chmod 666 /dev/leddev
 ```
 
-#  Ejecutar la aplicación Python de usuario
+# 4 Ejecutar la aplicación Python de usuario
 
 ```bash
 cd ~/led_driver_project/user_app
