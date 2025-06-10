@@ -44,24 +44,28 @@ make
 ```
 
 ### 2. Cargar el módulo
-
+```c
 sudo insmod led_driver.ko
+```
 
 ### 3. Verificar el número major
 
+```c
 cat /proc/devices | grep leddev
 
 Ejemplo salida: 239 leddev
-
+```
 ### 4. Crear el archivo en /dev
 
+```c
 sudo mknod /dev/leddev c 239 0
 
 sudo chmod 666 /dev/leddev
-
+```
 ### 5. Ejecutar la app de usuario
 
+```c
 cd ../user_app
 
 python3 led_control.py
-
+```
