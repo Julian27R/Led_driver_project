@@ -37,10 +37,11 @@ led_driver_project/
 ## ⚙️ Instrucciones de uso
 
 ### 🔧 1. Compilar el módulo
-
+```c
 cd driver
 
 make
+```
 
 ### 2. Cargar el módulo
 
@@ -50,7 +51,7 @@ sudo insmod led_driver.ko
 
 cat /proc/devices | grep leddev
 
-# Ejemplo salida: 239 leddev
+Ejemplo salida: 239 leddev
 
 ### 4. Crear el archivo en /dev
 
