@@ -23,9 +23,13 @@ Este proyecto implementa un **driver de dispositivo de carácter para Linux** qu
 ## 📦 Estructura del proyecto
 
 led_driver_project/
+
 ├── driver/ # Módulo del kernel (.c, Makefile)
+
 ├── user_app/ # Aplicación Python (led_control.py)
+
 ├── test/ # Evidencia de funcionamiento (logs, fotos, etc.)
+
 └── README.md # Documentación del proyecto
 
 ---
