@@ -42,27 +42,36 @@ cd driver
 
 make
 ```
+### 2. Liberar manueamente el GPIO
+Se libera el GPIO113 manualmente, debido a que ya se habia usado para el servicio de un Heartbeat.
+```c
+ls /sys-class/gpio | grep 113  "Esto se utuliza para verificar si el GPIO113 esta exportado"
 
-### 2. Cargar el módulo
+echo 113 | sudo tee /sys/class/gpio/unexport  "ESta linea de codigo se utilizo para liberar el pin GPIO113"
+
+```
+
+
+### 3. Cargar el módulo
 ```c
 sudo insmod led_driver.ko
 ```
 
-### 3. Verificar el número major
+### 4. Verificar el número major
 
 ```c
 cat /proc/devices | grep leddev
 
 Ejemplo salida: 239 leddev
 ```
-### 4. Crear el archivo en /dev
+### 5. Crear el archivo en /dev
 
 ```c
 sudo mknod /dev/leddev c 239 0
 
 sudo chmod 666 /dev/leddev
 ```
-### 5. Ejecutar la app de usuario
+### 6. Ejecutar la app de usuario
 
 ```c
 cd ../user_app
